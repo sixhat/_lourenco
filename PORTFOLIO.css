@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.split-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.img-link {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(50%);
+    transition: filter 0.4s ease;
+}
+
+.img-link:hover .main-img {
+    filter: brightness(100%);
+}
+
+.logo-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /* Aqui ajusta o tamanho conforme precisão */
+}
+
+.logo-img {
+    width: 340px; /* Ajusta conforme aparência desejada */
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.logo-link:hover .logo-img {
+    transform: scale(1.06);
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+}
+
+.left-img {
+    z-index: 1;
+}
+
+.right-img {
+    z-index: 1;
+}
