@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "brownsugar";
+  src:
+    local("brown-sugar.ttf"),
+    url("brown-sugar.ttf") format("truetype");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +19,7 @@ body {
 }
 
 .left-side {
-    background: url(./fotos/P_inicial.png) no-repeat;
+    background: url(./fotos/foto_inicial.png) no-repeat;
     background-position: center center;
     background-size: cover;
     height: 100vh;
@@ -27,7 +34,7 @@ body {
 }
 
 .title {
-    font-family: 'Didot', 'Georgia', serif;
+    font-family: 'brownsugar', 'Didot', 'Georgia', serif;
     font-size: max(2rem , 7vw);
     font-weight: 0;
     line-height: 0.90;

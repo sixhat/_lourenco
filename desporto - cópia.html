@@ -13,19 +13,21 @@
         <img src="fotos/logo_vertical.png" alt="Logo LANDRÉ" class="logo-img">
     </a>
     
-<div class="row">
-  <div class="column">
-    <img src="fotos/foto7.jpeg" alt="Imagem 1" class='img1' onclick="openModal(this)" />
-    <img src="fotos/foto9.jpeg" alt="Imagem 2" onclick="openModal(this)" />
-    <img src="fotos/foto8.jpeg" alt="Imagem 3" onclick="openModal(this)" />
-     <img src="fotos/foto6.jpeg" alt="Imagem 4" onclick="openModal(this)" />
-    <img src="fotos/foto2.jpeg" alt="Imagem 5" onclick="openModal(this)" />
-    <img src="fotos/foto4.jpeg" alt="Imagem 6" onclick="openModal(this)" />
-    <img src="fotos/foto3.jpeg" alt="Imagem 7" onclick="openModal(this)" />
-  </div>
-</div>
+    <div class="gallery-content">
+        <!-- Galeria principal -->
+            <img src="fotos/foto7.jpeg" alt="Imagem 1" class="img1" onclick="openModal(this)" />
+            <img src="fotos/foto9.jpeg" alt="Imagem 2" class="img2" onclick="openModal(this)" />
+            <img src="fotos/foto8.jpeg" alt="Imagem 3" class="img3" onclick="openModal(this)" />
+            <img src="fotos/foto6.jpeg" alt="Imagem 4" class="img4" onclick="openModal(this)" />
+                <a href="portfolio.html" class="gallery-title">
+                    FOTOGRAFIA<br>DESPORTIVA
+                </a>
+            <img src="fotos/foto2.jpeg" alt="Imagem 5" class="img5" onclick="openModal(this)" />
+            <img src="fotos/foto4.jpeg" alt="Imagem 6" class="img6" onclick="openModal(this)" />
+            <img src="fotos/foto3.jpeg" alt="Imagem 7" class="img7" onclick="openModal(this)" />
+    </div>
 
-  <!-- Modal (lightbox) -->
+    <!-- Modal (lightbox) -->
     <div id="modal" class="modal" onclick="closeModal()">
         <span class="close-btn">&times;</span>
         <img id="modal-img" class="modal-img" src="" alt="">
@@ -48,4 +50,3 @@
             e.stopPropagation();
         });
     </script>
-</body>

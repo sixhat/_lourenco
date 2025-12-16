@@ -1,121 +1,38 @@
+
 body {
-    margin: 0px;
-    padding: Opx;
-    font-family: Arial, sans-serif;
-    background: #fafafa;
-    min-height: 100vh;
-    width: 100vw;
-    position: relative;
-    transition: filter 0.4s;
+  margin: 0;
 }
 
 .logo-link {
-    position: absolute;
+    position: left;
     top: 10px;  /* Ajusta onde o logo aparece na vertical */
     left: 20px; /* Ajusta onde o logo aparece na horizontal */
     z-index: 2;
 }
 
 .logo-img {
-    width: 200px;
+    width: 200px; /* Ajusta o tamanho do logo */
     height: auto;
-    display: block;
-    box-shadow: 0 0 24px rgba(0,0,0,0.14);
 }
 
-.gallery-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100vh;
-    grid-gap: 0.2em;
-}
 
-.img1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.img2{
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
-
-.img3{
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
-
-.gallery-grid {
+/* Create four equal columns that sits next to each other */
+.column {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    gap: 28px;
-    height: 80vh;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 1vw;
 }
 
-.gallery-col {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+.column img {
+  margin-top: 8px;
+  padding: 0;
+  margin: 0;
+  max-width: 24.25%;
 }
-
-.gallery-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    margin: 0 18px;
-}
-
-.gallery-title {
-    font-family: 'Didot', 'Julius Sans One', serif;
-    color: black;
-    text-align: center;
-    font-size: 44px;
-    margin: 18px 0;
-    letter-spacing: 3px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.gallery-title:hover {
-    color: #b67c37;
-}
-
-/* AJUSTES TAMANHO IMAGENS */
 
 .img1 {
-    width: 400px;
-    height: 830px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.09);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.img2 {
-    width: 500px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.09);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.img3 {
-    width: 500px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.09);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.img4 {
     width: 300px;
     height: auto;
     object-fit: cover;
@@ -123,89 +40,4 @@ body {
     box-shadow: 0 0 12px rgba(0,0,0,0.09);
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.img5 {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.09);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.img6 {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.09);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.img7 {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.09);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.gallery-img:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 32px rgba(0,0,0,0.17);
-}
-
-/* Modal styles */
-.modal {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 999;
-    left: 0; top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.56);
-    backdrop-filter: blur(8px);
-    flex-direction: column;
-    cursor: pointer;
-}
-.modal-img {
-    max-width: 65vw;
-    max-height: 65vh;
-    border-radius: 20px;
-    box-shadow: 0 0 48px rgba(10,10,10,0.31);
-    z-index: 1001;
-}
-
-.close-btn {
-    position: absolute;
-    top: 44px;
-    right: 44px;
-    font-size: 48px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1002;
-    font-weight: bold;
-}
-
-/* DESFOQUE DO FUNDO */
-.blurred {
-    filter: blur(7px);
-    transition: filter 0.4s;
-}
-
-/* AJUSTES RESPONSIVOS */
-@media (max-width: 1100px) {
-    .gallery-img {
-        width: 140px; height: 150px;
-    }
-    .gallery-title {
-        font-size: 32px;
-    }
 }
