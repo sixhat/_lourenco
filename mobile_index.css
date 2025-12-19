@@ -1,0 +1,59 @@
+/* mobile_index.css  –  aplica-se só até 480px */
+
+/* fundo geral escuro como no mockup */
+body {
+  background: #1f1f1f;
+}
+
+/* o wrapper deixa de ser 2 colunas e vira “cartaz” vertical */
+.main-wrapper {
+  flex-direction: column;
+  height: auto;
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+  background: #111;
+}
+
+/* FOTO INICIAL – em mobile ocupa o topo a 100% */
+.left-side {
+  width: 100%;
+  height: 430px;                 /* ajusta até ficar igual ao print */
+  background: url(./fotos/foto_inicial_mobile.png) no-repeat center center;
+  background-size: cover;
+}
+
+/* PARTE BRANCA DE BAIXO (texto + links) */
+.right-side {
+  width: 100%;
+  padding: 24px 26px 34px;
+  background: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* título em mobile (se quiseres mostrar aqui também) */
+.title {
+  font-size: 26px;
+  margin-bottom: 18px;
+  line-height: 1.1;
+}
+
+/* texto do autor à esquerda, mais pequeno */
+.autor {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+/* menu passa para a direita, sem posição fixa */
+.menu {
+  position: static;
+  text-align: right;
+  margin-top: -10px;
+}
+
+.menu a {
+  font-size: 18pt;
+}

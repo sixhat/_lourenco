@@ -1,3 +1,5 @@
+@import "mobile_index.css" screen and (max-width: 500px);
+
 @font-face {
   font-family: "brownsugar";
   src:
@@ -81,21 +83,4 @@ body {
     font-weight: 480;
     display: block;
     margin-bottom: 6px;
-}
-
-@media (max-width: 950px) {
-    .main-wrapper {
-        flex-direction: column;
-    }
-    .left-side, .right-side {
-        width: 100vw;
-        min-width: unset;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .menu, .autor {
-        position: static;
-        margin-top: 30px;
-        text-align: left;
-    }
 }
