@@ -1,8 +1,11 @@
 /* mobile_index.css  –  aplica-se só até 480px */
+.column img {
+    max-width: 99%;
+}
 
 /* fundo geral escuro como no mockup */
 body {
-  background: #1f1f1f;
+  background: hsl(0, 0%, 100%);
 }
 
 /* o wrapper deixa de ser 2 colunas e vira “cartaz” vertical */
@@ -12,15 +15,7 @@ body {
   max-width: 540px;
   width: 100%;
   margin: 0 auto;
-  background: #111;
-}
-
-/* FOTO INICIAL – em mobile ocupa o topo a 100% */
-.left-side {
-  width: 100%;
-  height: 430px;                 /* ajusta até ficar igual ao print */
-  background: url(./fotos/foto_inicial_mobile.png) no-repeat center center;
-  background-size: cover;
+  background: #ffffff;
 }
 
 /* PARTE BRANCA DE BAIXO (texto + links) */
@@ -49,11 +44,10 @@ body {
 
 /* menu passa para a direita, sem posição fixa */
 .menu {
-  position: static;
   text-align: right;
   margin-top: -10px;
 }
 
 .menu a {
-  font-size: 18pt;
+  font-size: 10pt;
 }
